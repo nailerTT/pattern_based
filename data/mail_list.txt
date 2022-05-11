@@ -1,0 +1,16 @@
+MID:0001
+subject:CS news!
+sender:CS & Math Department
+content:The exam-week is coming!
+MID:0002
+subject:CS news 02!
+sender:CS & Math Department
+content:Easter Vacation is coming!!!
+MID:0003
+subject:CS news 02!
+sender:0003
+content:please make me fully registered.
+MID:0004
+subject:CS news 02!
+sender:0001
+content:help me have class 00001¬

@@ -1,0 +1,3 @@
+0001,Nako Yabuki,Fully Registered
+0002,Panda Ma,Fully Registered
+0003,Mary June,Pending Registered
