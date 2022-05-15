@@ -1,0 +1,81 @@
+{% extends "template.html" %}
+{% block main_menu %}
+<li><a href="stu_profile.html">profile</a></li>
+{% endblock %}
+
+{% block title %}Student Mailbox{% endblock %}
+
+{% block path %}
+<li class="breadcrumb-item"><a href="home_login.html">Home</a></li>
+<li class="breadcrumb-item"><a href="student_home.html">student</a></li>
+<li class="breadcrumb-item active" aria-current="page">Student Mailbox</li>
+{% endblock %}
+
+{%block content%}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="service-bottom-text text-center">
+            <p>Want to send a message? <a href="stu_mailbox-send.html">Click here.</a></p>
+        </div>
+    </div>
+</div>
+<!-- Blog Start -->
+    <div class="corpix-blog-section section section-padding">
+        <div class="container">
+            <div class="blog-grid-wrap">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <!-- Single Blog Start -->
+                        <div class="single-blog">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="date"><span>08</span>Aug</span>
+                                    <p><i class="fas fa-user"></i> Andrew Paker</p>
+                                </div>
+                                <h3 class="title"><a href="blog-details.html">Who Needs Extract Value From Data Delivering the best web design agency.</a></h3>
+                            </div>
+                            <div class="blog-btn">
+                                <a class="link-btn" href="blog-details.html">Read Full Article <span class="link-icon"><img src="static/assets/images/btn-icon.png" alt=""></span></a>
+                            </div>
+                        </div>
+                        <!-- Single Blog End -->
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <!-- Single Blog Start -->
+                        <div class="single-blog">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="date"><span>10</span>Aug</span>
+                                    <p><i class="fas fa-user"></i> Andrew Paker</p>
+                                </div>
+                                <h3 class="title"><a href="blog-details.html">Who Needs Extract Value From Data Delivering the best web design agency.</a></h3>
+                            </div>
+                            <div class="blog-btn">
+                                <a class="link-btn" href="blog-details.html">Read Full Article <span class="link-icon"><img src="static/assets/images/btn-icon.png" alt=""></span></a>
+                            </div>
+                        </div>
+                        <!-- Single Blog End -->
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <!-- Single Blog Start -->
+                        <div class="single-blog">
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="date"><span>12</span>Aug</span>
+                                    <p><i class="fas fa-user"></i> Andrew Paker</p>
+                                </div>
+                                <h3 class="title"><a href="blog-details.html">Who Needs Extract Value From Data Delivering the best web design agency.</a></h3>
+                            </div>
+                            <div class="blog-btn">
+                                <a class="link-btn" href="blog-details.html">Read Full Article <span class="link-icon"><img src="static/assets/images/btn-icon.png" alt=""></span></a>
+                            </div>
+                        </div>
+                        <!-- Single Blog End -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+{% endblock %}

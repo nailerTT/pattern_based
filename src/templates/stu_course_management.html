@@ -1,0 +1,127 @@
+{% extends "template.html" %}
+{% block main_menu %}
+<li><a href="{{url_for('stu_profile')}}">profile</a></li>
+{% endblock %}
+
+{% block title %}Student Profile{% endblock %}
+
+{% block path %}
+<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="{{url_for('show_student_home')}}">student home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Course Management</li>
+{% endblock %}
+
+{%block content%}
+<div class="card">
+        <div class="card-body">
+            <div class="team-profile-wrapper">
+                <!-- Team Profile Start -->
+                <div class="team-profile">
+                    <div class="profile-content">
+                        <h3 class="name">Course Management System</h3>
+                        <span class="designation"></span>
+                    </div>
+                </div>
+                <!-- Team Profile End -->
+                <div class="sidebar-widget sidebar-widget-1">
+                    <!-- Widget Search Form Start -->
+                    <h3 class="name">Student Course</h3>
+                    <!-- Widget Search Form End -->
+                </div>
+            </div>
+            <div class="table-responsive mt-3">
+                <table class="table align-middle">
+                <thead class="table-secondary">
+                    <tr>
+                    <th>CID</th>
+                    <th>Course Type</th>
+                    <th>Course Name</th>
+                    <th>Perfessor</th>
+                    <th>time</th>
+                    <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                  {% for item in args.course_list %}
+                    <tr>
+                    <td>
+                        <div class="d-flex align-items-center gap-3 cursor-pointer">
+                        <div class="">
+                            <p class="mb-0">{{item._CID}}</p>
+                        </div>
+                        </div>
+                    </td>
+                    <td>{{item._type}}</td>
+                    <td>{{item._Name}}</td>
+                    <td>{{item._professor}}</td>
+                    <td>{{item._time}}</td>
+                    <td>
+                        <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                                <button class ="btn" onclick="window.location.href='{{ url_for("delete_course",CID=item._CID)}}'">delete</button>
+                        </div>
+                    </td>
+                    </tr>
+                  {%endfor%}
+                </tbody>
+                </table>
+                <div class="team-profile-wrapper">
+                <!-- Team Profile Start -->
+                <div class="team-profile">
+                    <div class="profile-content">
+                        <span class="designation"></span>
+                    </div>
+                </div>
+                <!-- Team Profile End -->
+            </div>
+          </div>
+
+          <div class="table-responsive mt-3">
+              <table class="table align-middle">
+              <thead class="table-secondary">
+                  <tr>
+                  <th>CID</th>
+                  <th>Course Type</th>
+                  <th>Course Name</th>
+                  <th>Perfessor</th>
+                  <th>time</th>
+                  <th>Actions</th>
+                  </tr>
+              </thead>
+
+              <tbody>
+                {% for item in args.all_course %}
+                  <tr>
+                  <td>
+                      <div class="d-flex align-items-center gap-3 cursor-pointer">
+                      <div class="">
+                          <p class="mb-0">{{item._CID}}</p>
+                      </div>
+                      </div>
+                  </td>
+                  <td>{{item._type}}</td>
+                  <td>{{item._Name}}</td>
+                  <td>{{item._professor}}</td>
+                  <td>{{item._time}}</td>
+                  <td>
+                      <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                              <button class ="btn" onclick="window.location.href='{{ url_for("delete_course",CID=item._CID)}}'">add</button>
+                      </div>
+                  </td>
+                  </tr>
+                {%endfor%}
+              </tbody>
+              </table>
+              <div class="team-profile-wrapper">
+              <!-- Team Profile Start -->
+              <div class="team-profile">
+                  <div class="profile-content">
+                      <span class="designation"></span>
+                  </div>
+              </div>
+              <!-- Team Profile End -->
+          </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}

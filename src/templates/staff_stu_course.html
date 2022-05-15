@@ -1,0 +1,88 @@
+{% extends "template.html" %}
+
+{% block title %}Student Course Management{% endblock %}
+
+{% block path %}
+<li class="breadcrumb-item"><a href="home_login.html">Home</a></li>
+<li class="breadcrumb-item"><a href="staff_home.html">Staff</a></li>
+<li class="breadcrumb-item active" aria-current="page">Student Course Management</li>
+{% endblock %}
+
+{%block content%}
+<div class="card">
+        <div class="card-body">
+            <div class="team-profile-wrapper">
+                <!-- Team Profile Start -->
+                <div class="team-profile">
+                    <div class="profile-content">
+                        <h3 class="name">Course Management System</h3>
+                        <span class="designation"></span>
+                    </div>
+                </div>
+                <!-- Team Profile End -->
+                <div class="sidebar-widget sidebar-widget-1">
+                    <!-- Widget Search Form Start -->
+                    <h3 class="name">Student Course</h3>
+                    <!-- Widget Search Form End -->
+                </div>
+            </div>
+
+            <div class="table-responsive mt-3">
+                <table class="table align-middle">
+                <thead class="table-secondary">
+                    <tr>
+                    <th>#</th>
+                    <th>CID</th>
+                    <th>Course Type</th>
+                    <th>Course Name</th>
+                    <th>Perfessor</th>
+                    <th>time</th>
+                    <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td>
+                        <div class="d-flex align-items-center gap-3 cursor-pointer">
+                        <div class="">
+                            <p class="mb-0">0001</p>
+                        </div>
+                        </div>
+                    </td>
+                    <td>Mandatory</td>
+                    <td>Pattern-based software</td>
+                    <td>Liping Zhao</td>
+                    <td>every Monday</td>
+                    <td>
+                        <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                            <button class="btn">delete</button>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>
+                        <div class="d-flex align-items-center gap-3 cursor-pointer">
+                        <div class="">
+                            <p class="mb-0">0002</p>
+                        </div>
+                        </div>
+                    </td>
+                    <td>Mandatory</td>
+                    <td>Component-based software</td>
+                    <td>Kau</td>
+                    <td>every Monday</td>
+                    <td>
+                    <div class="table-actions d-flex align-items-center gap-3 fs-6">
+                            <button class="btn">delete</button>
+                    </div>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

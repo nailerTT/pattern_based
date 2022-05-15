@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Nanchester system-Pattern Based Course work</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="static/assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="static/assets/css/plugins/all.min.css">
+    <link rel="stylesheet" href="static/assets/css/plugins/flaticon.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="static/assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="static/assets/css/plugins/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="static/assets/css/plugins/magnific-popup.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="static/assets/css/style.css">
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <!-- Preloader Start  -->
+        <div id="preloader">
+            <div class="preloader">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Preloader End  -->
+
+        <!-- Header Start  -->
+        <header id="header" class="section header">
+
+            <div class="container">
+                <!-- Header Wrapper Start  -->
+
+                <div class="header-wrapper">
+
+                    <!-- Header Logo Start -->
+                    <div class="header-logo ">
+                        <a href="home_login.html"><img src="static/assets/images/logo-7.png" alt=""></a>
+                    </div>
+                    <!-- Header Logo End -->
+
+                    <div class="header-middle">
+                        <!-- Header Menu Start -->
+                        <div class="header-menu d-none d-lg-block">
+                            <ul class="main-menu">
+                                <li><a href="/">Home</a></li>
+                                {% block main_menu %}{% endblock %}
+                            </ul>
+                        </div>
+                        <!-- Header Menu End -->
+
+                    </div>
+
+                    <!-- Header Meta Start -->
+                    <div class="header-meta d-none d-lg-flex align-items-center">
+                        <div class="header-btn">
+                            <a class="link-btn" href="report_problem.html">report a problem <span class="link-icon"><img src="static/assets/images/btn-icon.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <!-- Header Meta End -->
+                </div>
+                <!-- Header Wrapper End  -->
+
+            </div>
+        </header>
+        <!-- Header End -->
+
+    </div>
+
+    <!-- Page Banner Start -->
+    <div class="corpix-banner-section d-flex align-items-center section" style="background-image: url(static/assets/images/page-banner.jpg);">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="shape-3"></div>
+        <div class="shape-4"></div>
+        <div class="container">
+            <div class="corpix-banner-wrap">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Page Banner Content Start -->
+                        <div class="page-banner-content text-center">
+                            <h2 class="title">{% block title %}Home & Login{% endblock %}</h2>
+                            <ul class="breadcrumb justify-content-center">
+                                {% block path %}
+                                <li class="breadcrumb-item">nanchester student system</li>
+                                {% endblock %}
+                            </ul>
+                        </div>
+                        <!-- Page Banner Content End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Page Banner End -->
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer Start -->
+    <div class="footer-section section" style="background-image: url(static/assets/images/bg/footer-bg.jpg);">
+        <div class="container">
+
+            <!-- Footer Widget Wrapper Start -->
+            <div class="footer-widget-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-3">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget widget-about">
+                            <a class="footer-logo" href="home_login.html"><img src="static/assets/images/logo-7.png" alt="Logo"></a>
+                            <div class="widget-info">
+                                <ul>
+                                    <li>Nanchester</li>
+                                    <li>student</li>
+                                    <li>system</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">student id:</h4>
+                            <div class="widget-idnumber">
+                                <ul class="idnumber">
+                                    <li>10856682</li>
+                                    <li>10837358</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">contact email:</h4>
+                            <div class="widget-email">
+                                <ul class="email">
+                                    <li>yuchentang99@gmail.com </li>
+                                    <li>shengzhe.yang@student.manchester.ac.uk</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- Footer Widget Wrapper End -->
+
+        </div>
+        <!-- Footer Copy Start -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    <p>© Copyrights All rights By <a href="http://www.bootstrapmb.com/">bootstrapmb</a>.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copy End -->
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top End -->
+    <button class="back-btn" id="backBtn"><i class="fas fa-arrow-up"></i></button>
+    <!-- Back to Top End -->
+
+    <!-- JS
+    ============================================ -->
+    <script src="static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="static/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="static/assets/js/plugins/popper.min.js"></script>
+    <script src="static/assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="static/assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="static/assets/js/plugins/aos.js"></script>
+    <script src="static/assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="static/assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="static/assets/js/plugins/appear.min.js"></script>
+    <script src="static/assets/js/plugins/waypoints.min.js"></script>
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+
+
+    <!-- Main JS -->
+    <script src="static/assets/js/main.js"></script>
+</body>
+</html>

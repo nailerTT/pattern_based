@@ -1,0 +1,93 @@
+{% extends "template.html" %}
+
+{% block title %}Home & Login{% endblock %}
+
+{% block path %}
+<li class="breadcrumb-item active" aria-current="page">nanchester student system</li>
+{% endblock %}
+
+{% block content %}
+<!-- Login Start -->
+<div class="section login-register-section section-padding">
+    <div class="container">
+
+        <!-- Login & Register Wrapper Start -->
+        <div class="login-register-wrap">
+            <div class="row gx-5">
+                <div class="col-lg-6">
+
+                    <!-- Login & Register Box Start -->
+                    <div class="login-register-box">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h2 class="title">staff Login</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <div class="login-register-form">
+                            <form action="/staff_home" method="get" onsubmit="CheckStaffInput(this)">
+                                <div class="single-form">
+                                    <input type="staff_text" name="staff_text" class="form-control" placeholder="Username ">
+                                </div>
+                                <div class="single-form">
+                                    <input type="password" name="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-btn">
+                                    <button class="btn" type="submit">Login as staff</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Login & Register Box End -->
+
+                </div>
+                <div class="col-lg-6">
+
+                    <!-- Login & Register Box Start -->
+                    <div class="login-register-box">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h2 class="title">student login</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <div class="login-register-form">
+                            <form action="/student_home" method="get" onsubmit="CheckStudentInput(this)">
+                                <div class="single-form">
+                                    <input type="student_text" name="student_text" class="form-control" placeholder="Username ">
+                                </div>
+                                <div class="form-btn">
+                                    <button class="btn" type="submit">Login as a student</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Login & Register Box End -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Login & Register Wrapper End -->
+
+    </div>
+</div>
+<!-- Login & Register End -->
+
+<script>
+  function CheckStaffInput(form) {
+    a1 = form["staff_text"].value;
+    a2 = form["password"].value;
+    if (a1==''||a2==''){
+      alert("Password or Username could not be empty!");
+    }
+    return True;
+  }
+  function CheckStudentInput(form) {
+    a3 = form["student_text"].value;
+    if (a3==''){
+      alert("Student id could not be empty!");
+    }
+    return True;
+  }
+</script>
+{% endblock %}
